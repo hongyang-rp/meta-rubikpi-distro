@@ -22,6 +22,9 @@ CORE_IMAGE_BASE_INSTALL += " \
     rubikpi3-thermal \
 "
 
+#Provide log header support on SDK
+TOOLCHAIN_TARGET_TASK:append = " syslog-plumber-dev"
+
 IMAGE_INSTALL:append = " \
     hostapd \
     i2c-tools \
