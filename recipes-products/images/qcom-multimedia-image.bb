@@ -15,7 +15,6 @@ CORE_IMAGE_BASE_INSTALL += " \
     rwreservepartition \
     ax88179bprogrammer \
     packagegroup-qt5-toolchain-target \
-    rubikpi-wifi \
     rubikpi-config \
     packagegroup-qcom-test-pkgs \
     first-login \
