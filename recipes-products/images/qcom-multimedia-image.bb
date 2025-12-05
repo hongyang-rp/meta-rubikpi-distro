@@ -1,5 +1,4 @@
 require qcom-console-image.bb
-inherit populate_sdk_qt5
 
 SUMMARY = "Basic Wayland image with Weston"
 
@@ -14,8 +13,6 @@ CORE_IMAGE_BASE_INSTALL += " \
     rubikpi-bt-staticdev \
     rwreservepartition \
     ax88179bprogrammer \
-    packagegroup-qt5-toolchain-target \
-    rubikpi-config \
     packagegroup-qcom-test-pkgs \
     first-login \
     usb-scripts-automount \
@@ -43,7 +40,6 @@ IMAGE_INSTALL:append = " \
     ax88179bprogrammer \
     libcec \
     cec-client \
-    python3-pyqt5 python3-pytest-qt \
     iotop lsof \
     var-rubikpi-config-mount \
     wiringrp wiringrp-python wiringrp-gpio \
